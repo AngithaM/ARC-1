@@ -20,7 +20,8 @@ Summary/reflection
 
 
 Similarities: 
-1. Most of the tasks have input and output array of the same shape or easily determinable shape. This means one can be transformed into another or we can make modifications on a shape to get the final output.
+1. Most of the tasks have input and output array of the same shape or easily determinable shape. This means one can be transformed into another or we can make 
+    modifications on a shape to get the final output.
 2. There were a lot of common tasks such as identifying shapes, copying parts of a pattern, flipping, finding the position of the non-background squares.
 3. Matching and extracting patterns are also typical, and so is identifying the background when it is non-black. 
 4. Group the colors, and it’s corresponding positions to manipulate them as per the task.
@@ -31,20 +32,29 @@ Similarities:
 Differences:
 1. While the input was a NumPy array, not all were squares, and the shape changes with in the same task at times.
 2. The output and the input were not of the same dimension, and hence, not all the results can be obtained by manipulating the input.
-3. Within the same task, different patterns need to be considered separately to solve it. While some patterns can be solved by locating their centers and sizes, others within the same pattern might require additional manipulation.
+3. Within the same task, different patterns need to be considered separately to solve it. While some patterns can be solved by locating their centers and sizes,
+  others within the same pattern might require additional manipulation.
 4. In some rare cases, backtracking might also be required when the next move is ambiguous. 
 
-Libraries used: For most of the problems, array manipulation was the most important and common task and numpy libraries were extremely helpful. Various numpy methods were used to match patterns, identify locations of points and so on. Aside from this, some of the normal python libraries were used like collections itertools and counters.
+Libraries used: For most of the problems, array manipulation was the most important and common task and numpy libraries were extremely helpful. Various numpy methods
+were used to match patterns, identify locations of points and so on. Aside from this, some of the normal python libraries were used like collections itertools and counters.
 
 ************************************************************************************************************
 Summary/reflection
 
-All the similarities and differences are indications of “general fluid intelligence” that the ARC is trying to determine using several geometrical and topological aspects that humans can solve easily.  Franc¸ois Chollet, in his paper on ARC, defines intelligence as the rate at which a learner turns its experience and priors into new skills at valuable tasks that involve uncertainty and adaptation. Here, intelligent machines should identify the intent behind the patterns and start to move towards the solution in a generalized manner with a small number of train cases.
+All the similarities and differences are indications of “general fluid intelligence” that the ARC is trying to determine using several geometrical and topological aspects 
+that humans can solve easily.  Franc¸ois Chollet, in his paper on ARC, defines intelligence as the rate at which a learner turns its experience and priors into new skills
+at valuable tasks that involve uncertainty and adaptation. Here, intelligent machines should identify the intent behind the patterns and start to move towards the solution
+in a generalized manner with a small number of train cases.
 Manually coding these helps us identify what can be generalized and how we can approach each of the problems in a similar way. This is the first step to actually solving it.
-Of course, this is not in scope at the moment. But using a simple case of a neural network in the last example, we're showing that it is possible to solve tasks generally even with so few training data. Neural networks are data hungry and 
+Of course, this is not in scope at the moment. But using a simple case of a neural network in the last example, we're showing that it is possible to solve tasks generally 
+even with so few training data. Neural networks are data hungry and 
 as expected do not give good outputs.
 
-In theory can even use Genetic algorithms to find the solution. This might be better suited to problem with inputs being transformed to outputs as the neighbour function here would make a small step in the right direction from the input until it reaches the output. At the very least, we might need the output shape so as to determine our decision variables. The objective function in this case will be to minimize the difference between the input array and the output array. Of course, while this might seem like a good idea, it might not necessarily work with the test data.
+In theory can even use Genetic algorithms to find the solution. This might be better suited to problem with inputs being transformed to outputs as the neighbour function 
+here would make a small step in the right direction from the input until it reaches the output. At the very least, we might need the output shape so as to determine our 
+decision variables. The objective function in this case will be to minimize the difference between the input array and the output array. Of course, while this might seem 
+like a good idea, it might not necessarily work with the test data.
 
 """
 ### YOUR CODE HERE: write at least three functions which solve
