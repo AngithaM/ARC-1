@@ -148,5 +148,13 @@ color in the input grid.
 
 Correctness of the solution: All test cases are passed
 
+#### d0f5fe59
+##### Difficulty: Medium to high
 
+The input grid is a rectangular (list of lists) matrix of variable shape, with a single integer number.Blue colour of the color spectrum are represented by the integer 8.
+The task is to identify the boundaries between different shapes, identify and differentiate different shapes, and create a matrix whose diagnol elements reprents one shape.The created matrix should have a size of (identified shape * identified shape).
+
+![image](https://user-images.githubusercontent.com/74540513/143909421-2cfcfc6f-84d2-4cfb-b337-2a7f851dd69a.png)
+
+Correctness of the solution: All test cases are passed
 
