@@ -160,3 +160,8 @@ color in the input grid.
 
 Correctness of the solution: All test cases are passed
 
+### Neural Networks on ARC
+
+While working on the manual solutions, it is identified that a lot of the tasks are similar and can be generalized to some extend. While Neural Networks are notoriously data
+hungry,
+
